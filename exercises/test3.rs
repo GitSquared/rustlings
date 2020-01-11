@@ -7,8 +7,11 @@
 // we expect to get when we call `times_two` with a negative number.
 // No hints, you can do this :)
 
-// I AM NOT DONE
 
+fn main() {
+    // Testing how signed integers work
+    println!("{}", times_two(-4));
+}
 pub fn times_two(num: i32) -> i32 {
     num * 2
 }
@@ -19,11 +22,12 @@ mod tests {
 
     #[test]
     fn returns_twice_of_positive_numbers() {
-        assert_eq!(times_two(4), ???);
+        assert_eq!(times_two(4), 8);
     }
 
     #[test]
     fn returns_twice_of_negative_numbers() {
         // TODO write an assert for `times_two(-4)`
+        assert_eq!(times_two(-4), -8);
     }
 }
